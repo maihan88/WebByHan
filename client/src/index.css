@@ -1,0 +1,74 @@
+@import "tailwindcss";
+.font-lora {
+    font-family: 'Lora', serif;
+  }
+  
+  .font-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+.banner {
+  position: relative;
+  width: 100%;
+  padding-top: 132%;
+}
+
+@media (min-width: 550px) {
+  .banner {
+    padding-top: 56.25%;
+  }
+}
+
+@media (min-width: 850px) {
+  .banner {
+    padding-top: 50%;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.vertical-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 6px 0;
+  display: block;
+}
+
+.horizontal-pagination .swiper-pagination-bullet {
+  margin: 0 5px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.horizontal-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.swiper-slide {
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev-custom {
+    left: 5px !important;
+  }
+  .swiper-button-next-custom {
+    right: 5px !important;
+  }
+}
+
